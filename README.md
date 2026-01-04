@@ -18,7 +18,7 @@ This is a frontend website created to showcase the history, achievements, and me
 - Open `index.html` in any web browser
 
 ## 🌐 Live Demo
-(Add GitHub Pages link here once enabled)
+https://rithan7.github.io/Rithan/
 
 ## 👤 Author
 - Rithan N
