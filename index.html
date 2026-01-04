@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cristiano Ronaldo | The Phenomenon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .home-timeline-section {
+      max-width: 1100px;
+      margin: 3em auto 2.5em auto;
+      padding: 1em 0 0 0;
+    }
+    .home-timeline-title {
+      text-align: center;
+      font-size: 2rem;
+      color: var(--primary, #ffd700);
+      margin-bottom: 2.2em;
+      letter-spacing: 1px;
+      text-shadow: 0 2px 12px #ffd70022;
+    }
+    .home-timeline-container {
+      position: relative;
+      margin: 0 auto;
+      padding: 0 0 2em 0;
+      width: 97%;
+      min-height: 380px;
+    }
+    .home-timeline-line {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 6px;
+      min-height: 100%;
+      background: linear-gradient(180deg, #ffd700 0%, #fff 100%);
+      transform: translateX(-50%);
+      z-index: 1;
+      border-radius: 6px;
+    }
+    .home-timeline-event {
+      position: relative;
+      width: 50%;
+      padding: 1.5rem 2rem;
+      box-sizing: border-box;
+      min-height: 90px;
+      z-index: 2;
+    }
+    .home-timeline-event.left {
+      left: 0;
+      text-align: right;
+      justify-content: flex-end;
+    }
+    .home-timeline-event.right {
+      left: 50%;
+      text-align: left;
+      justify-content: flex-start;
+    }
+    .home-timeline-event .icon {
+      position: absolute;
+      top: 50%;
+      width: 48px;
+      height: 48px;
+      background: #ffd700;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 8px #0002;
+      border: 3px solid #fff;
+      z-index: 3;
+      transform: translateY(-50%);
+    }
+    .home-timeline-event.left .icon {
+      right: -24px;
+    }
+    .home-timeline-event.right .icon {
+      left: -24px;
+    }
+    .home-timeline-event .date {
+      font-weight: bold;
+      color: #ffd700;
+      font-size: 1.1em;
+    }
+    .home-timeline-event .desc {
+      font-size: 1.13em;
+      margin-top: 0.15em;
+      color: #fff;
+      text-shadow: 0 2px 8px #0006;
+    }
+    .home-timeline-event:not(:last-child) {
+      margin-bottom: 1.7rem;
+    }
+    @media (max-width: 900px) {
+      .home-timeline-line { left: 12px; }
+      .home-timeline-event,
+      .home-timeline-event.left,
+      .home-timeline-event.right {
+        left: 0;
+        width: 100%;
+        text-align: left;
+        padding-left: 68px;
+        padding-right: 1em;
+      }
+      .home-timeline-event .icon,
+      .home-timeline-event.right .icon,
+      .home-timeline-event.left .icon {
+        left: 0;
+        right: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="glass animate__animated animate__fadeInDown">
+    <div class="nav-container">
+      <a href="index.html" class="logo rainbow-text">CR7</a>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="records.html">Records</a></li>
+        <li><a href="life.html">Life & Beyond</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="legacy.html">Legacy</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero animate__animated animate__zoomIn">
+    <div class="hero-overlay"></div>
+    <h1 class="neon-text">Cristiano Ronaldo</h1>
+    <h2 class="glow">The Phenomenon</h2>
+    <a href="achievements.html" class="cta-btn animate__animated animate__bounceIn animate__delay-2s">See Achievements</a>
+  </header>
+
+  <section class="bio-section animate__animated animate__fadeInLeft">
+    <img src="biopic.jpg" alt="Cristiano Ronaldo Portrait" class="bio-img float-right"/>
+    <h3 class="section-title">About CR7</h3>
+    <p>
+      <b>Cristiano Ronaldo dos Santos Aveiro</b> (born 5 February 1985) is more than a footballer—he is an icon, a brand, and an inspiration. Hailing from Madeira, Portugal, Ronaldo climbed from a humble background to become the most recognizable athlete in the world. 
+    </p>
+    <p>
+      Known for his extraordinary speed, powerful shots, and clinical finishing, Ronaldo's journey spanned Sporting CP, Manchester United, Real Madrid, Juventus, Al Nassr, and the Portuguese national team. He is admired for his dedication, discipline, philanthropy, and relentless pursuit of greatness.
+    </p>
+    <div class="bio-facts">
+      <div>
+        <span class="fact-title">Nationality</span>
+        <span class="fact-value">Portuguese 🇵🇹</span>
+      </div>
+      <div>
+        <span class="fact-title">Height</span>
+        <span class="fact-value">187 cm (6'2")</span>
+      </div>
+      <div>
+        <span class="fact-title">Position</span>
+        <span class="fact-value">Forward</span>
+      </div>
+      <div>
+        <span class="fact-title">Clubs</span>
+        <span class="fact-value">Sporting CP, Manchester United, Real Madrid, Juventus, Al Nassr</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-timeline-section animate__animated animate__fadeInUp">
+    <h2 class="home-timeline-title">Career Timeline</h2>
+    <div class="home-timeline-container">
+      <div class="home-timeline-line"></div>
+      <div class="home-timeline-event left animate__animated animate__fadeInLeft">
+        <div class="circle-img"><img src="child.png" alt="Portugal Flag" width="70"></div>
+        <span class="date">1985</span>
+        <div class="desc">Born in Madeira, Portugal</div>
+      </div>
+      <div class="home-timeline-event right animate__animated animate__fadeInRight animate__delay-3s">
+        <div class="circle-img"><img src="spor.jpeg" alt="Sporting CP Logo" width="70"></div>
+        <span class="date">2002</span>
+        <div class="desc">Debuts for Sporting CP (Primeira Liga)</div>
+      </div>
+      <div class="home-timeline-event left animate__animated animate__fadeInLeft animate__delay-4s">
+        <div class="circle-img"><img src="manu.jpeg" alt="Man Utd" width="90"></div>
+        <span class="date">2003</span>
+        <div class="desc">Signs for Manchester United</div>
+      </div>
+      <div class="home-timeline-event right animate__animated animate__fadeInRight animate__delay-5s">
+        <div class="circle-img"><img src="real.jpeg" alt="Real Madrid" width="90"></div>
+        <span class="date">2009</span>
+        <div class="desc">Joins Real Madrid for €94M (world record)</div>
+      </div>
+      <div class="home-timeline-event left animate__animated animate__fadeInLeft animate__delay-6s">
+        <div class="circle-img"><img src="juv.jpeg" alt="Juventus" width="90"></div>
+        <span class="date">2018</span>
+        <div class="desc">Moves to Juventus</div>
+      </div>
+      <div class="home-timeline-event right animate__animated animate__fadeInRight animate__delay-7s">
+        <div class="circle-img"><img src="mano.jpeg" alt="Man Utd" width="100"></div>
+        <span class="date">2021</span>
+        <div class="desc">Returns to Manchester United</div>
+      </div>
+      <div class="home-timeline-event left animate__animated animate__fadeInLeft animate__delay-8s">
+        <div class="circle-img"><img src="aln.jpeg" alt="Al Nassr" width="100"></div>
+        <span class="date">2023</span>
+        <div class="desc">Joins Al Nassr, Saudi Arabia</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="carousel-section animate__animated animate__fadeInUp">
+    <div class="carousel-title">
+      <h3>Career Highlights</h3>
+    </div>
+    <div class="carousel" id="mainCarousel">
+      <div class="carousel-slide active">
+        <img src="cl5.png" alt="CR7 UCL">
+        <div class="carousel-caption"><b>5x Champions League Winner</b></div>
+      </div>
+      <div class="carousel-slide">
+        <img src="cwc.jpg" alt="Euro 2016">
+        <div class="carousel-caption">Euro 2016 Champion</div>
+      </div>
+      <div class="carousel-slide">
+        <img src="newbal.jpeg" alt="Real Madrid">
+        <div class="carousel-caption">450 Goals for Real Madrid</div>
+      </div>
+      <div class="carousel-slide">
+        <img src="pree.jpeg" alt="Man Utd">
+        <div class="carousel-caption">Premier League Legend</div>
+      </div>
+      <div class="carousel-slide">
+        <img src="natio.webp" alt="Portugal">
+        <div class="carousel-caption">Most International Goals Ever</div>
+      </div>
+      <button class="carousel-btn left" onclick="carouselPrev()">&#8592;</button>
+      <button class="carousel-btn right" onclick="carouselNext()">&#8594;</button>
+    </div>
+  </section>
+
+  <section class="quote-section animate__animated animate__fadeIn">
+    <blockquote>
+      “We cannot live being obsessed with what other people think about us. It's impossible to live like that. Not even God managed to please the entire world.”
+      <cite>— Cristiano Ronaldo</cite>
+    </blockquote>
+  </section>
+
+  <section class="animated-counters animate__animated animate__fadeInUp">
+    <div>
+      <span id="goalsCounter" class="counter neon-text">0</span>
+      <span class="counter-label">Career Goals</span>
+    </div>
+    <div>
+      <span id="trophiesCounter" class="counter neon-text">0</span>
+      <span class="counter-label">Major Trophies</span>
+    </div>
+    <div>
+      <span id="ballonsCounter" class="counter neon-text">0</span>
+      <span class="counter-label">Ballon d'Ors</span>
+    </div>
+    <div>
+      <span id="capsCounter" class="counter neon-text">0</span>
+      <span class="counter-label">International Caps</span>
+    </div>
+  </section>
+
+  <footer>
+    <span>Made By A Fan Boy Of Cristiano Ronaldo</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
