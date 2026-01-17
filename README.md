@@ -18,7 +18,7 @@ This is a frontend website created to showcase the history, achievements, and me
 - Open `index.html` in any web browser
 
 ## 🌐 Live Demo
-https://rithan7.github.io/Rithan/
+ https://rithan7.github.io/cristiano-ronaldo-website/
 
 ## 👤 Author
 - Rithan N
